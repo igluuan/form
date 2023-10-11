@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9eab525171.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 id="title">Teste para ser amante de Luan</h1>
+    <div class="form">
+        <form id="form-content">
+            <label for="name" id="label-form">Nome:</label>
+            <span id="error">
+                <input type="text" id="name" required="on">
+                <p id="error1-msg" style="display: none;">test</p>
+            </span>
+            <label for="age" id="label-form">Idade:</label>
+            <span id="error">
+                <input type="text" id="age" required="on">
+                <p id="error2-msg"style="display: none;">test</p>
+            </span>
+            <span id="spanCheckBox">É casada?
+                <input type="checkbox" name="checkBox" id="checkBox">
+                <p id="error3-msg"style="display: none;">test</p>
+            </span>
+            <button type="submit" id="btnSubmit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

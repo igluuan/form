@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior idade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input[type="text"]{
+            width: 200px;
+            height: 30px;
+            padding-left: 7px;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Você é de maior?</h1>
+    <input type="text" id="name" placeholder="name">
+    <input type="text" id="age" placeholder="age">
+    <button type="submit" id="btnSubmit">Enviar</button>
+</body>
+<script src="script.js"></script>
+</html>

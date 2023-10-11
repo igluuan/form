@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #fff; /* Tema claro */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login-form{
+    position: absolute;
+    top: 150px;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#create-form{
+    position: absolute;
+    top: 110px;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+
+}
+#user,
+#password,
+#email{
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    background-color: darkgrey;
+    width: 200px;
+    height: 40px;
+    font-size: 1.5em;
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#label-user{
+    position: relative;
+    right: 75px;
+    font-size: 1.5em;
+}
+#label-password{
+    position: relative;
+    right: 43px;
+    font-size: 1.5em;
+}
+#label-email{
+    position: relative;
+    right: 70px;
+    font-size: 1.5em;
+}
+
+#button-login,
+#button-create,
+#back-page{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.702);
+}
+#button-login:hover,
+#button-create:hover,
+#back-page:hover{
+    background-color: rgb(86, 85, 85);
+}
+#button-login:active,
+#button-create:active,
+#back-page:active{
+
+    transform: scaleY(2px);
+    background-color: rgb(49, 49, 49);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.702);
+}
+#user-welcome{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.dark-mode{
+    background-color: #333; /* Tema escuro */
+    color: #fff;
+}
+
+.switch {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input[type="checkbox"]:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  

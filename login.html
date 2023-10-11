@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pag-Login</title>
+</head>
+<body>
+    <div id="user-welcome" style="display: none;">
+        Bem-vindo, <span id="user-name"></span>!
+    </div>
+    <form id="login-form">
+        <label for="user" id="label-user">User</label>
+        <input type="text" id="user" name="user" required="on">
+        <label for="password" id="label-password">Password</label>
+        <input type="password" id="password" name="password" required="on">
+        <button type="submit" id="button-login">LOGIN</button>
+        <button type="submit" id="button-create">CREATE</button>
+    </form>
+
+    <form id="create-form" style="display: none;">
+        <label for="user" id="label-user">User</label>
+        <input type="text" id="user" name="user" required="on">
+        <label for="email" id="label-email">Email</label>
+        <input type="email" id="email" name="email" required="on">
+        <label for="password" id="label-password">Password</label>
+        <input type="password" id="password" name="password" required="on">
+        <button type="submit" id="button-create">CREATE</button>
+        <button id="back-page">BACK</button>
+    </form>
+    <label class="switch">
+        <input type="checkbox" id="toggle-theme">
+        <span class="slider"></span>
+      </label>
+</body>
+<script src="login.js"></script>
+</html>
